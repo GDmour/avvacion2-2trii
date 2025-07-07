@@ -1,31 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-:root{
---branco: white; 
---cor-de-fundo:#0C0950;
---fundo-texto:#0118D8;
---fundo-senha:#4F1C51;
---borda:#261FB3;
+:root {
+--branco: white;
+--cor-de-fundo: #19008a;
+--cor-de-senha: #008cff;
+--fundo-texto: #3C0753;
+--borda: #008371;
 --fonte: 'Bebas Neue', sans-serif;
+}
+
+* {
+font-weight: 500;
+}
+
+body {
+color: var(--branco);
+background-color: var(--cor-de-fundo);
+font-family: var(--fonte);
+}
+
+.titulo_principal {
+font-family: var(--fonte);
+font-size: 32px;
+}
+
+.titulo_secundario {
+font-size: 24px;
+}
+
+.conteudo_titulo {
+text-align: center;
+margin-top: 80px;
 
 }
-*{
-    font-weight: 400;
+
+.cadeado_conteudo {
+width: 100px;
 }
-body{
-    color: var(--branco);
-    background-color: var(--cor-de-fundo);
-    font-family: var(--fonte);
+
+.cadeado_conteudo {
+width: 150px
 }
-    
-.titulo_principal{
-    font-family: var(--fonte);
-    font-size: 32px;   
+
+.conteudo_senha {
+margin: top 80px;
+background: var(--fundo-senha);
+padding: 24px;
+border-bottom: 6px dotted var(--borda);
 }
-.titulo_segundario{
-    font-size: 24px;
+
+#campo_senha {
+background-color: var(--fundo-senha);
+border: none;
+color: var(--branco);
+font-size: 40px;
+width: 70%;
 }
-.conteudo_titulo{
-    text-align: center;
-    margin-top: 80px;
+
+#campo_senha:focus {
+outline: none;
+}
+
+.conteudo_senhas {
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.parametro {
+background-color: var(--fundo-texto);
+border: 2px solid var(--borda);
+margin-top: 32px;
+padding: 24px;
+}
+
+.parametro-senha_titulo {
+font-size: 24px;
+}
+
+.parametro_coluna_senha {
+display: flex;
+flex-direction: column;
+justify-content: center;
 }
